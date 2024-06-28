@@ -10,7 +10,7 @@ spec:
   - port: 8080
     protocol: TCP
     targetPort: 8080
-    name: web
+    name: 8080-tcp
   selector:
     app: prometheus-example-app
   type: ClusterIP
