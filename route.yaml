@@ -7,6 +7,10 @@ metadata:
 spec:
   port:
     targetPort: 8080-tcp
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
   to:
     kind: Service
     name: prometheus-example-app
